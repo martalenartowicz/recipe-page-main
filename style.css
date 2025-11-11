@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --background: hsl(30, 54%, 90%);
+  --container: hsl(0, 0%, 100%);
+  --dishTitle: hsl(24, 5%, 18%);
+  --titles: hsl(14, 45%, 36%);
+  --text: hsl(30, 10%, 34%);
+  --preparationBackground: hsl(330, 100%, 98%);
+  --preparationText: hsl(332, 51%, 32%);
+  --line: hsl(30, 18%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 650px;
+  padding: 40px;
+  margin: 40px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container);
+  border-radius: 20px;
+}
+
+/* Title section */
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+  font-size: 15px;
+}
+
+img[alt="Omelette"] {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 28px 0 15px 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--dishTitle);
+}
+
+/* Preparation time section  */
+
+.prep {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+  padding: 18px 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--preparationBackground);
+  border-radius: 8px;
+}
+
+.bold {
+  color: var(--dishTitle);
+  font-weight: 700;
+}
+
+.prep-list {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--preparationText);
+  padding-left: 20px;
+}
+.prep-list li {
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--preparationText);
+  margin-bottom: 10px;
+}
+
+/* Ingredients section */
+
+.ingredients-list {
+  line-height: 20px;
+  padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.ingredients-list li {
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--titles);
+  margin-bottom: 10px;
+}
+
+/* Instructions list */
+
+.instructions-list {
+  line-height: 20px;
+  padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.instructions ol {
+  list-style-type: decimal;
+  color: var(--titles);
+  padding-left: 20px;
+  font-weight: 700;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+}
+
+.instructions-list li span {
+  font-weight: 400;
+  color: var(--text);
+}
+
+.line {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Nutirion */
+
+.nutirion-desc {
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+
+.nutrition-table {
+  font-family: "Outfit", sans-serif;
+  color: var(--text);
+  font-size: 15px;
+  padding: 20px 20px;
+}
+
+.nutrition-bold {
+  font-weight: 600;
+  color: var(--preparationText);
+  float: right;
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
