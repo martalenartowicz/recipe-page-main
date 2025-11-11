@@ -20,8 +20,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/recipe-page-main-w117J0sgel)
+- Live Site URL: [live site URL](https://martalenartowicz.github.io/recipe-page-main/)
 
 ## My process
 
