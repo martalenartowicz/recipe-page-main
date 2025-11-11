@@ -37,7 +37,7 @@ Ul and ol list styling.
 
 ### Continued development
 
-Using a <table> in future projects in this one I used <hr> tag to display nutirion table.
+Using a table tag in future projects in this one I used hr tag to display nutirion table.
 
 ## Author
 
