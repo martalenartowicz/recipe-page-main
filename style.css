@@ -5,7 +5,7 @@
 :root {
   --background: hsl(30, 54%, 90%);
   --container: hsl(0, 0%, 100%);
-  --dishTitle: hsl(24, 5%, 18%);
+  --bold: hsl(24, 5%, 18%);
   --titles: hsl(14, 45%, 36%);
   --text: hsl(30, 10%, 34%);
   --preparationBackground: hsl(330, 100%, 98%);
@@ -46,7 +46,7 @@ body {
 
 img[alt="Omelette"] {
   width: 100%;
-  max-width: 550px;
+  max-width: 600px;
   border-radius: 12px;
 }
 
@@ -55,9 +55,9 @@ h1 {
   font-weight: 400;
   font-style: normal;
   margin: 28px 0 15px 0;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 30px;
-  color: var(--dishTitle);
+  color: var(--bold);
 }
 
 /* Preparation time section  */
@@ -80,11 +80,15 @@ h1 {
 .prep-list {
   font-size: 14px;
   line-height: 20px;
-  color: var(--preparationText);
+  color: var(--bold);
   padding-left: 20px;
 }
 .prep-list li {
   margin-bottom: 5px;
+}
+
+.prep-list li::marker {
+  color: var(--preparationText);
 }
 
 h3 {
@@ -124,19 +128,24 @@ h2 {
   line-height: 20px;
   padding-left: 20px;
   font-family: "Outfit", sans-serif;
-  color: var(--text);
   font-size: 14px;
 }
 
 .instructions ol {
   list-style-type: decimal;
-  color: var(--titles);
+  color: var(--bold);
   padding-left: 20px;
   font-weight: 700;
 }
 
 .instructions li {
   margin-bottom: 8px;
+  padding-inline-start: 10px;
+}
+
+.instructions li::marker {
+  color: var(--preparationText);
+  margin-right: 10px;
 }
 
 .instructions-list li span {
@@ -181,4 +190,12 @@ h2 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    border-radius: 0%;
+    margin: auto;
+  }
 }
